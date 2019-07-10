@@ -1,0 +1,34 @@
+enum Permission {
+  ADMIN
+  GUEST
+  CLIENT
+}
+
+type User {
+  id: ID! @id
+  name: String!
+  email: String! @unique
+  password: String!
+  resetToken: String
+  resetTokenExpiry: Float
+  access: Permission! @default(value: GUEST)
+  adminView: Boolean! @default(value: false)
+}
+
+type Project {
+  id: ID! @id
+  title: String!
+  logo: String!
+  logoLarge: String!
+  pictures: [String] @scalarList(strategy: RELATION)
+  phonePictures: [String] @scalarList(strategy: RELATION)
+  phonePicturesLarge: [String] @scalarList(strategy: RELATION)
+  largePictures: [String] @scalarList(strategy: RELATION)
+  liveLink: String
+  githubLink: String!
+  techStack: [String!]! @scalarList(strategy: RELATION)
+  paragraphs: [String]! @scalarList(strategy: RELATION)
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  isSecret: Boolean! @default(value: false)
+}

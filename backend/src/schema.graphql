@@ -1,0 +1,53 @@
+# import * from './generated/prisma.graphql'
+type SuccessMessage {
+  message: String
+}
+
+type Mutation {
+  signup(email: String!, password: String!, name: String!): User!
+  createProject(
+    title: String!
+    logo: String!
+    logoLarge: String!
+    pictures: [String]
+    phonePictures: [String]
+    phonePicturesLarge: [String]
+    largePictures: [String]
+    liveLink: String!
+    githubLink: String!
+    techStack: [String!]!
+    paragraphs: [String]!
+    isSecret: Boolean!
+  ): Project!
+  signin(email: String!, password: String!): User!
+  requestReset(email: String!): SuccessMessage
+  resetPassword(resetToken: String!, password: String!, confirm: String!): User
+  contactForm(
+    subject: String!
+    email: String!
+    name: String!
+    body: String!
+  ): SuccessMessage
+}
+
+type Query {
+  projects(
+    where: ProjectWhereInput
+    orderBy: ProjectOrderByInput
+    skip: Int
+    after: String
+    before: String
+    first: Int
+    last: Int
+  ): [Project]!
+  projectsConnection(where: ProjectWhereInput): ProjectConnection!
+  project(where: ProjectWhereUniqueInput!): Project
+  me: User
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  permissions: Permission
+}
