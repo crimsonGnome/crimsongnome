@@ -12,7 +12,7 @@ const Meta = () => (
       crossOrigin="anonymous"
     />
 
-    <link rel="shortcut icon" href="/static/gnomeLogo2.png" />
+    <link rel="shortcut icon" href="/static/gnomeLogo2.PNG" />
 
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
     <title>Crimson Gnome</title>

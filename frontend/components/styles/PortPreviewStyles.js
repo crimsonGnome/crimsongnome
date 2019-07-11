@@ -122,6 +122,10 @@ const PortPreview = styled.div`
   .padding_about p {
     z-index: 4;
   }
+  .text-align-left {
+    display: grid;
+    justify-content: center;
+  }
 
   @media (min-width: 845px) {
     &::after,
