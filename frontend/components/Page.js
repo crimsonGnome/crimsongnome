@@ -70,7 +70,14 @@ injectGlobal`
   }
   
 `;
-
+//HTTPs force
+const development = process.env.NODE_ENV === 'development' ? true : false;
+if (!development) {
+  var httpTokens = /^http:\/\/(.*)$/.exec(window.location.href);
+  if (httpTokens) {
+    window.location.replace('https://' + httpTokens[1]);
+  }
+}
 class Page extends Component {
   render() {
     return (

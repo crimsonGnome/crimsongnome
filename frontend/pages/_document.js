@@ -14,7 +14,23 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          <>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `if (typeof window !== "undefined") {
+        // hacky force https
+        if (window.location.protocol != "https:") {
+          window.location.href =
+            "https:" +
+            window.location.href.substring(window.location.protocol.length);
+        }
+      }`
+              }}
+            />
+            {this.props.styleTags}
+          </>
+        </Head>
         <body>
           <Main />
           <NextScript />
