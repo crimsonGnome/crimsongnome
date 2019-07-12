@@ -36,6 +36,38 @@ const mutations = {
     );
     return project;
   },
+  async updateProject(parent, args, ctx, info) {
+    //Amdin Authentication
+    //Check to see if user is logged in
+    // loggedIn(ctx.request.userId);
+    //query the current user
+
+    //Check if the user has permission to create search Filter
+    // hasPermission(ctx.request.user, ['ADMIN', 'PERMISSIONUPDATE']);
+
+    //Get updates
+    const updates = { ...args };
+    //remove the ID
+    delete updates.id;
+    //run the update method
+    return ctx.db.mutation.updateProject(
+      {
+        data: {
+          ...updates,
+          techStack: {
+            set: args.techStack
+          },
+          paragraphs: {
+            set: args.paragraphs
+          }
+        },
+        where: {
+          id: args.id
+        }
+      },
+      info
+    );
+  },
   async signup(parent, args, ctx, info) {
     //Lowercase their email
     args.email = args.email.toLowerCase();

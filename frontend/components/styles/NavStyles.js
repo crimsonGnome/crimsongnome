@@ -41,6 +41,19 @@ const Header = styled.header`
     background: none;
     color: white;
   }
+  .open {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px;
+  }
+  .open div {
+    content: '';
+    width: 20px;
+    min-height: 3px;
+    background-color: white;
+    margin: 2px 0;
+  }
 
   @media (${props => props.theme.HorizontalNav}) {
     z-index: 10;

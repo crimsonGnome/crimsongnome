@@ -19,6 +19,15 @@ type Mutation {
     paragraphs: [String]!
     isSecret: Boolean!
   ): Project!
+  updateProject(
+    id: ID!
+    title: String
+    liveLink: String
+    githubLink: String
+    techStack: [String]
+    paragraphs: [String]
+    isSecret: Boolean
+  ): Project!
   signin(email: String!, password: String!): User!
   requestReset(email: String!): SuccessMessage
   resetPassword(resetToken: String!, password: String!, confirm: String!): User

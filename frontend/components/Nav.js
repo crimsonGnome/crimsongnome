@@ -62,7 +62,11 @@ class Nav extends Component {
             aria-controls="menu-list"
             aria-expanded={this.state.ariaControl}
           >
-            <span className="open">☰</span>
+            <span className="open">
+              <div />
+              <div />
+              <div />
+            </span>
           </button>
           <nav aria-expanded={this.state.ariaControl}>
             <NavStyles>
