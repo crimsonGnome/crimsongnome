@@ -126,7 +126,9 @@ const PortPreview = styled.div`
     display: grid;
     justify-content: center;
   }
-
+  .phone {
+    display: none;
+  }
   @media (min-width: 845px) {
     &::after,
     ::before {
@@ -200,6 +202,12 @@ const PortPreview = styled.div`
 
     .mobile-height {
       margin-top: 75px;
+    }
+    .phone {
+      display: block;
+    }
+    .computer {
+      display: none;
     }
   }
 `;

@@ -174,7 +174,7 @@ class Project extends Component {
                   </CorkBoard>
                   <div className="order1">
                     <div
-                      className="logo"
+                      className="logo computer"
                       style={{
                         content: '',
                         position: 'absolute',
@@ -183,6 +183,23 @@ class Project extends Component {
                         width: '60%',
                         height: '100vh',
                         backgroundImage: `radial-gradient(ellipse closest-side, transparent, white), url(${
+                          project.logoLarge
+                        })`,
+                        skewX: '(-15deg)',
+                        opacity: 0.6
+                      }}
+                    />
+                    <div
+                      className="logo phone"
+                      style={{
+                        content: '',
+                        position: 'absolute',
+                        top: ' -10%',
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        backgroundRepeat: 'repeat',
+                        backgroundImage: `radial-gradient(ellipse closest-side, transparent, transparent, white), url(${
                           project.logoLarge
                         })`,
                         skewX: '(-15deg)',

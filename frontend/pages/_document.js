@@ -15,9 +15,10 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `if (typeof window !== "undefined") {
+          {process.env.NODE_ENV !== 'development' && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `if (typeof window !== "undefined") {
         // hacky force https
         if (window.location.protocol != "https:") {
           window.location.href =
@@ -25,8 +26,10 @@ export default class MyDocument extends Document {
             window.location.href.substring(window.location.protocol.length);
         }
       }`
-            }}
-          />
+              }}
+            />
+          )}
+
           {this.props.styleTags}
         </Head>
         <body>
