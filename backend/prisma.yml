@@ -1,5 +1,5 @@
-endpoint: ${env:PRISMA_ENDPOINT}
-# endpoint: https://crimson-gnome-prod-258645e37d.herokuapp.com/crimson-gnome-prod/prod
+# endpoint: ${env:PRISMA_ENDPOINT}
+endpoint: https://crimson-gnome-prod-258645e37d.herokuapp.com/crimson-gnome-prod/prod
 datamodel: datamodel.prisma
 secret: ${env:PRISMA_SECRET}
 
