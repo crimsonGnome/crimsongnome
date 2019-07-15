@@ -199,7 +199,7 @@ const mutations = {
     //send email to my email
     const mailRes2 = await transport.sendMail({
       from: 'crimsongnome.dev@gmail.com',
-      to: 'crimsongnome.dev@gmail.com',
+      to: 'joseph.eggers.dev@gmail.com',
       subject: `CrimsonGnome Site - ${args.subject}`,
       html: makeANiceEmail(
         `<h3>Subject - ${args.subject}</h3> \n\n
