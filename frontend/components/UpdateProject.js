@@ -59,6 +59,9 @@ class UpdateProject extends Component {
     const a = document.getElementById('newParagraph');
     const { name } = e.target;
     let paragraphs = [...data];
+    if (this.state.paragraphs) {
+      paragraphs = [...this.state.paragraphs];
+    }
     const b = document.getElementById(name);
 
     //Get the value
@@ -86,6 +89,9 @@ class UpdateProject extends Component {
     const { name } = e.target;
     const b = document.getElementById(name);
     let techStack = [...data];
+    if (this.state.techStack) {
+      techStack = [...this.state.techStack];
+    }
     //Get the value
     if (name === '') {
       techStack.push(a.value);
