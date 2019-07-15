@@ -189,7 +189,7 @@ const mutations = {
   async contactForm(parent, args, ctx, info) {
     //automated message to contact person
     const mailRes = await transport.sendMail({
-      from: 'joseph.eggers.dev@gmail.com',
+      from: 'crimsongnome.dev@gmail.com',
       to: args.email,
       subject: 'Automated Resopnse Email',
       html: makeANiceEmail(
@@ -198,8 +198,8 @@ const mutations = {
     });
     //send email to my email
     const mailRes2 = await transport.sendMail({
-      from: 'joseph.eggers.dev@gmail.com',
-      to: 'joseph.eggers.dev@gmail.com',
+      from: 'crimsongnome.dev@gmail.com',
+      to: 'crimsongnome.dev@gmail.com',
       subject: `CrimsonGnome Site - ${args.subject}`,
       html: makeANiceEmail(
         `<h3>Subject - ${args.subject}</h3> \n\n
