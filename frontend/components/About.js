@@ -63,25 +63,26 @@ class About extends Component {
                 I remember writing my first lines of code and being amazed with
                 how code can create anything. My first distinct memory of code
                 was being blown away by CSS (design). I was able to shape my
-                websites in ways I never imagined. It was the simple things at
-                first like float left, background color, and margin but the
-                little design changes blew my mind the way an old timey looney
-                toons cartoon character would. Like a rainbow trout on a fishing
-                line, it was game and I was hooked.
+                websites in ways I never imagined. At first it was the simple
+                things: float left; background color; margin, but the little
+                design changes blew my mind the way a redneck gets blown away
+                when using gasoline on a bonfire. Like a rainbow trout on a
+                fishing line, it was game and I was hooked.
               </p>
               <p>
-                Good design is something anybody can recognize, but being able
+                Good design is something anybody could recognize, but being able
                 to create takes practice and dedication. The void between what I
-                wanted to make and what I could create eventually started to
-                grow closer together. Combining the process of code to design to
-                build..., to develop…, brings its own satisfaction as I get
-                better and better.
+                wanted to create and what I could create eventually started to
+                grow closer together. Combining the process of coding to
+                designing to build..., to forge, brings its own satisfaction as
+                I get better and better.
               </p>
               <p>
-                When I’m not coding, the most important thing is spending time
-                my girlfriend Laura, family, and friends. On my off time, I love
-                board games, D&D, movies, and coding. As you read this, I’m
-                probably typing away coding for fun, with a vintage copy of Risk
+                When I’m not coding, the most important things to me are
+                spending time my girlfriend Laura, family, and friends. On my
+                off time, I love playing board games, casting magic missile in
+                D&D, watching movies, and coding. As you read this, I’m probably
+                typing away coding for fun, with a vintage copy of Risk
                 underneath my computer.
               </p>
               <p>

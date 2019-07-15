@@ -1,9 +1,10 @@
 import CreateProject from '../components/CreateProject';
+import AdminSignIn from '../components/AdminSignIn';
 
 const Home = props => (
-  <div>
+  <AdminSignIn>
     <CreateProject />
-  </div>
+  </AdminSignIn>
 );
 
 export default Home;

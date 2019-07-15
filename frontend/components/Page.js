@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Nav from './Nav';
 import Meta from './Meta';
+import AdminFooter from './AdminFooter';
 
 const theme = {
   maxWidth: '1000px',
@@ -78,6 +79,7 @@ class Page extends Component {
           <Meta />
           <Nav />
           <Inner>{this.props.children}</Inner>
+          <AdminFooter />
         </StyledPage>
       </ThemeProvider>
     );

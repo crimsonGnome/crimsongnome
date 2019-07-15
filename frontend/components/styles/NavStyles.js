@@ -114,6 +114,14 @@ const Logo = styled.h1`
       font-weight: normal;
       font-style: normal;
     }
+    @media (max-height: 643px) {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    @media (max-height: 618px) {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
   }
   cursor: pointer;
   font-family: 'Trajan';

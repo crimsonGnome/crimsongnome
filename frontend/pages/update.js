@@ -1,8 +1,9 @@
-import CreateProject from '../components/CreateProject';
+import UpdateProject from '../components/UpdateProject';
+import AdminSignIn from '../components/AdminSignIn';
 
 const Update = ({ query }) => (
-  <div>
-    <CreateProject id={query.id} />
-  </div>
+  <AdminSignIn>
+    <UpdateProject id={query.id} />
+  </AdminSignIn>
 );
 export default Update;

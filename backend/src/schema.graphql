@@ -3,6 +3,12 @@ type SuccessMessage {
   message: String
 }
 
+enum Permission {
+  ADMIN
+  GUEST
+  CLIENT
+}
+
 type Mutation {
   signup(email: String!, password: String!, name: String!): User!
   createProject(
@@ -29,6 +35,7 @@ type Mutation {
     isSecret: Boolean
   ): Project!
   signin(email: String!, password: String!): User!
+  signout: SuccessMessage
   requestReset(email: String!): SuccessMessage
   resetPassword(resetToken: String!, password: String!, confirm: String!): User
   contactForm(
@@ -58,5 +65,5 @@ type User {
   id: ID!
   name: String!
   email: String!
-  permissions: Permission
+  permission: Permission
 }

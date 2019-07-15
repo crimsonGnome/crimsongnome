@@ -78,8 +78,7 @@ const mutations = {
       {
         data: {
           ...args,
-          password,
-          permissions: { set: ['USER'] }
+          password
         }
       },
       info
@@ -118,6 +117,10 @@ const mutations = {
     });
     //Return the user
     return user;
+  },
+  signout(parent, args, ctx, info) {
+    ctx.response.clearCookie('token');
+    return { message: 'Gooodbye!' };
   },
   async resetPassword(parent, args, ctx, info) {
     //Check if passwords match
@@ -173,7 +176,7 @@ const mutations = {
     });
     //email them reset token
     const mailRes = await transport.sendMail({
-      from: 'joseph.eggers.dev@gmail.com',
+      from: 'crimsongnome.dev@gmail.com',
       to: user.email,
       subject: 'Your Password Reset Link',
       html: makeANiceEmail(

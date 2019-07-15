@@ -11,7 +11,7 @@ type User {
   password: String!
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission! @default(value: GUEST)
+  permission: Permission! @default(value: GUEST)
   adminView: Boolean! @default(value: false)
 }
 

@@ -1,5 +1,5 @@
-# source: https://us1.prisma.sh/eggersjoseph23-36a5ee/crimsonGnome/dev
-# timestamp: Fri Jul 05 2019 14:17:50 GMT-0700 (Pacific Daylight Time)
+# source: https://crimson-gnome-prod-258645e37d.herokuapp.com/crimson-gnome-prod/prod
+# timestamp: Mon Jul 15 2019 13:11:31 GMT-0700 (Pacific Daylight Time)
 
 type AggregateProject {
   count: Int!
@@ -607,7 +607,7 @@ type User implements Node {
   password: String!
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission!
+  permission: Permission!
   adminView: Boolean!
 }
 
@@ -628,7 +628,7 @@ input UserCreateInput {
   password: String!
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission
+  permission: Permission
   adminView: Boolean
 }
 
@@ -654,8 +654,8 @@ enum UserOrderByInput {
   resetToken_DESC
   resetTokenExpiry_ASC
   resetTokenExpiry_DESC
-  access_ASC
-  access_DESC
+  permission_ASC
+  permission_DESC
   adminView_ASC
   adminView_DESC
 }
@@ -667,7 +667,7 @@ type UserPreviousValues {
   password: String!
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission!
+  permission: Permission!
   adminView: Boolean!
 }
 
@@ -714,7 +714,7 @@ input UserUpdateInput {
   password: String
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission
+  permission: Permission
   adminView: Boolean
 }
 
@@ -724,7 +724,7 @@ input UserUpdateManyMutationInput {
   password: String
   resetToken: String
   resetTokenExpiry: Float
-  access: Permission
+  permission: Permission
   adminView: Boolean
 }
 
@@ -959,16 +959,16 @@ input UserWhereInput {
 
   """All values greater than or equal the given value."""
   resetTokenExpiry_gte: Float
-  access: Permission
+  permission: Permission
 
   """All values that are not equal to given value."""
-  access_not: Permission
+  permission_not: Permission
 
   """All values that are contained in given list."""
-  access_in: [Permission!]
+  permission_in: [Permission!]
 
   """All values that are not contained in given list."""
-  access_not_in: [Permission!]
+  permission_not_in: [Permission!]
   adminView: Boolean
 
   """All values that are not equal to given value."""
