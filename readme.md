@@ -1,4 +1,4 @@
-![Advanced React & GraphQL](https://crimsongnome.com/static/crimsongnome.png)
+(https://crimsongnome.com/static/crimsongnome.png)
 
 # Crimson Gnome
 
