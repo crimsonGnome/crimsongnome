@@ -196,13 +196,15 @@ class Project extends Component {
                         position: 'absolute',
                         top: ' -10%',
                         left: 0,
-                        width: '50%',
+                        width: '100%',
                         height: '50%',
                         backgroundRepeat: 'repeat',
                         backgroundImage: `radial-gradient(ellipse closest-side, transparent, transparent, white), url(${
                           project.logoLarge
                         })`,
                         skewX: '(-15deg)',
+                        backgroundPositionX: 'center',
+                        backgroundPositionY: 'center',
                         opacity: 0.3
                       }}
                     />
