@@ -1,4 +1,4 @@
-(https://crimsongnome.com/static/crimsongnome.png)
+crimsongnome.com/static/crimsonGnome.png
 
 # Crimson Gnome
 
