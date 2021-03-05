@@ -79,8 +79,8 @@ class About extends Component {
               <p>
                 When I’m not coding, the most important things to me are time
                 with my beautiful{' '}
-                <del style={{ color: '#e0e0e0' }}>girlfriend </del>
-                <del style={{ color: '#e0e0e0' }}>fiance </del>wife Laura,
+                <del style={{ color: '#999999' }}>girlfriend </del>
+                <del style={{ color: '#999999' }}>fiance </del>wife Laura,
                 family, and friends. On my off time, I love playing board games,
                 casting magic missile in D&D, watching movies, and coding. As
                 you read this, I’m probably typing away coding for fun, with a
