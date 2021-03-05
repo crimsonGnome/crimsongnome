@@ -77,8 +77,8 @@ class About extends Component {
                 I get better and better.
               </p>
               <p>
-                When I’m not coding, the most important things to me are
-                spending time my wife, Laura, family, and friends. On my off
+                When I’m not coding, the most important things to me are time
+                with my wife beautiful Laura, family, and friends. On my off
                 time, I love playing board games, casting magic missile in D&D,
                 watching movies, and coding. As you read this, I’m probably
                 typing away coding for fun, with a vintage copy of Risk
