@@ -78,11 +78,11 @@ class About extends Component {
               </p>
               <p>
                 When I’m not coding, the most important things to me are
-                spending time with my wife, Laura, family, and friends. On my
-                off time, I love playing board games, casting magic missile in
-                D&D, watching movies, and coding. As you read this, I’m probably
-                typing away coding for fun, with a vintage copy of Risk
-                underneath my computer.
+                spending time with my wife beautiful Laura, family, and friends.
+                On my off time, I love playing board games, casting magic
+                missile in D&D, watching movies, and coding. As you read this,
+                I’m probably typing away coding for fun, with a vintage copy of
+                Risk underneath my computer.
               </p>
               <p>
                 If you ever need a coffee-drinking work buddy, slide into those
