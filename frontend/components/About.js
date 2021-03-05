@@ -78,9 +78,10 @@ class About extends Component {
               </p>
               <p>
                 When I’m not coding, the most important things to me are time
-                with my beautiful <d style="color:#e0e0e0 ">girlfriend </d>
-                <d style="color:#e0e0e0 ">fiance </d>wife Laura, family, and
-                friends. On my off time, I love playing board games, casting
+                with my beautiful{' '}
+                <d style={{ color: '#e0e0e0' }}>girlfriend </d>
+                <d style={{ color: '#e0e0e0' }}>fiance </d>wife Laura, family,
+                and friends. On my off time, I love playing board games, casting
                 magic missile in D&D, watching movies, and coding. As you read
                 this, I’m probably typing away coding for fun, with a vintage
                 copy of Risk underneath my computer.
