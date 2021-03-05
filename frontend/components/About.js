@@ -54,7 +54,7 @@ class About extends Component {
               <p>
                 In college, I studied physics because I wanted to understand the
                 mathematics of our reality. At the culmination of my college
-                experience, I was more entranced by the coding in the software
+                experience, I was more entranced by the coding i`n the software
                 than by the physics I was studying. I chose to pursue
                 programming after college and immersed myself in courses, docs,
                 and projects.
@@ -65,9 +65,8 @@ class About extends Component {
                 was being blown away by CSS (design). I was able to shape my
                 websites in ways I never imagined. At first it was the simple
                 things: float left; background color; margin, but the little
-                design changes blew my mind the way a redneck gets blown away
-                when using gasoline on a bonfire. Like a rainbow trout on a
-                fishing line, it was game and I was hooked.
+                design changes blew my mind`. Like a rainbow trout on a fishing
+                line, it was game and I was hooked.
               </p>
               <p>
                 Good design is something anybody could recognize, but being able
@@ -79,9 +78,9 @@ class About extends Component {
               </p>
               <p>
                 When I’m not coding, the most important things to me are
-                spending time my girlfriend Laura, family, and friends. On my
-                off time, I love playing board games, casting magic missile in
-                D&D, watching movies, and coding. As you read this, I’m probably
+                spending time my wife, Laura, family, and friends. On my off
+                time, I love playing board games, casting magic missile in D&D,
+                watching movies, and coding. As you read this, I’m probably
                 typing away coding for fun, with a vintage copy of Risk
                 underneath my computer.
               </p>
