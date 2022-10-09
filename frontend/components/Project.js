@@ -193,7 +193,7 @@ const Project = props => {
                       height: '100vh',
                       backgroundImage: `radial-gradient(ellipse closest-side, transparent, white), url(${project.logoLarge})`,
                       skewX: '(-15deg)',
-                      opacity: 0.3
+                      opacity: 0.15
                     }}
                   />
                   <div
