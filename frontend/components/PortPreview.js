@@ -83,12 +83,12 @@ class PortPreview extends Component {
                   </span>
                 </Link>
               </PaperButton>
-              <hr className="preview" />
+              {/* <hr className="preview" />
               <PaperButton>
                 <a href={liveLink} target="_blank">
                   Live Link <i className="fas fa-arrow-right arrow" />
                 </a>
-              </PaperButton>
+              </PaperButton> */}
               <hr className="preview" />
               <PaperButton>
                 <a href={githubLink} target="_blank">

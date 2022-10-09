@@ -112,12 +112,12 @@ const Project = props => {
                   <div style={setSkew[seeminglyRandom()]}>
                     <Notecard>
                       <div className="paperNotecardDisplay">
-                        <PaperButton className="NotecardButton">
+                        {/* <PaperButton className="NotecardButton">
                           <a href={project.liveLink} target="_blank">
                             Live Link <i className="fas fa-arrow-right arrow" />
                           </a>
                         </PaperButton>
-                        <hr className="project" />
+                        <hr className="project" /> */}
                         <PaperButton className="NotecardButton">
                           <a href={project.githubLink} target="_blank">
                             Code <i className="fas fa-arrow-right arrow" />

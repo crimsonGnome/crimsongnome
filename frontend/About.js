@@ -65,9 +65,7 @@ class About extends Component {
                 was being blown away by CSS (design). I was able to shape my
                 websites in ways I never imagined. At first it was the simple
                 things: float left; background color; margin, but the little
-                design changes blew my mind`. Like a rainbow trout on a fishing
-                line, it was game and I was hooked.
-              </p>
+                design changes blew my mind`. 
               <p>
                 Good design is something anybody could recognize, but being able
                 to create takes practice and dedication. The void between what I
@@ -78,7 +76,7 @@ class About extends Component {
               </p>
               <p>
                 When I’m not coding, the most important things to me are
-                spending time with my wife beautiful Laura, family, and friends.
+                spending time with my  beautiful wife Laura, daughter Aurelia, family, and friends.
                 On my off time, I love playing board games, casting magic
                 missile in D&D, watching movies, and coding. As you read this,
                 I’m probably typing away coding for fun, with a vintage copy of
