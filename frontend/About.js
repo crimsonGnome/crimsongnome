@@ -19,6 +19,8 @@ class About extends Component {
                 <h3 className="crimson center">Core</h3>
                 <hr />
                 <DualList>
+                  <li>C++</li>
+                  <li>Phython</li>
                   <li>Javascript</li>
                   <li>NodeJS</li>
                   <li>PHP</li>
@@ -76,7 +78,10 @@ class About extends Component {
               </p>
               <p>
                 When I’m not coding, the most important things to me are
-                spending time with my  beautiful wife Laura, daughter Aurelia, family, and friends.
+                spending time with my  beautiful
+                <del style={{color: '#999999'}}> girlfriend </del>{' '}
+                <del style={{color: '#999999'}}>fiance </del>
+                wife Laura, daughter Aurelia, family, and friends.
                 On my off time, I love playing board games, casting magic
                 missile in D&D, watching movies, and coding. As you read this,
                 I’m probably typing away coding for fun, with a vintage copy of
