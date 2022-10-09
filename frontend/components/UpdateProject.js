@@ -81,6 +81,31 @@ class UpdateProject extends Component {
     this.setState({ paragraphs: paragraphs });
     //copy the existing state and push value
   };
+  addParagraph = e => {
+    //Get Element
+    e.preventDefault();
+    const a = document.getElementById('newParagraph');
+    const { name } = e.target;
+    const b = document.getElementById(name);
+
+    //Get the value
+    let paragraphs = [...this.state.paragraphs];
+    if (name === '') {
+      paragraphs.push(a.value);
+      a.value = '';
+    } else {
+      for (let i = 0; i < paragraphs.length; i++) {
+        if (name === paragraphs[i]) {
+          //if key matches paragraph
+          paragraphs[i] = b.value;
+          break;
+        }
+      }
+    }
+    //set state
+    this.setState({ paragraphs: paragraphs });
+    //copy the existing state and push value
+  };
   uploadTechStack = (e, data) => {
     e.preventDefault();
     //Get Element
@@ -104,6 +129,20 @@ class UpdateProject extends Component {
         }
       }
     }
+    this.setState({ techStack: techStack });
+  };
+  adduploadTechStack = e => {
+    e.preventDefault();
+    //Get Element
+    const a = document.getElementById('newTechStack');
+    //Get the value
+
+    const { value } = a;
+    //copy the existing state and push value
+    let techStack = [...this.state.techStack];
+    techStack.push(value);
+    //set Attribut to blank
+    a.value = '';
     this.setState({ techStack: techStack });
   };
 
@@ -181,7 +220,7 @@ class UpdateProject extends Component {
                           name="newParagraph"
                           placeholder="New Paragraph"
                         />
-                        <button onClick={this.handleParagraph}>
+                        <button onClick={this.addParagraph}>
                           Add Paragraph
                         </button>
                       </div>
