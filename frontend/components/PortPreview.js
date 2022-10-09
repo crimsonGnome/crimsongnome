@@ -29,7 +29,7 @@ class PortPreview extends Component {
       height: '60%',
       backgroundImage: `radial-gradient(ellipse closest-side, transparent, white), url(${logo})`,
       skewX: '(-15deg)',
-      opacity: 0.6,
+      opacity: 0.4,
       
     };
     return (
